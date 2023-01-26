@@ -1,0 +1,33 @@
+RewriteEngine On
+RewriteBase /
+############ FORUM ##############
+RewriteRule ^app/index.php?for=forum&do=list&uid=([0-9]+)&p=([0-9]+)&sz=15$ /forum/index.php?baiviet&uid=$1&ducnghia=$2 [L]
+ RewriteRule ^app/index.php?for=forum&do=setting&uid=1&p=([0-9]+)&sz=15$ /forum/index.php [L]
+ ################ END #############
+RewriteRule ^maps/code/benhvien-(.*).xml$ maps/code/benhvien.xml [L]
+RewriteRule ^maps/code/shop-(.*).xml$ maps/code/shop.xml [L]
+RewriteRule ^maps/code/nha-(.*).xml$ maps/code/nha.xml [L]
+RewriteRule ^maps/code/benhvien2-(.*).xml$ maps/code/benhvien2.xml [L]
+RewriteRule ^maps/code/shop2-(.*).xml$ maps/code/shop2.xml [L]
+RewriteRule ^maps/code/nha20-(.*).xml$ maps/code/nha20.xml [L]
+RewriteRule ^maps/code/nha3-(.*).xml$ maps/code/nha3.xml [L]
+RewriteRule ^maps/code/nha4-(.*).xml$ maps/code/nha4.xml [L]
+RewriteRule ^maps/code/nha5-(.*).xml$ maps/code/nha5.xml [L]
+RewriteRule ^maps/code/nha6-(.*).xml$ maps/code/nha6.xml [L]
+
+
+
+
+RewriteRule ^screen/images/game/close.png$ style/images/game/close.png [L]
+
+RewriteRule ^play$ play.php [L]
+RewriteRule ^game.json$ data.php [L]
+RewriteRule ^(.*).ducnghia$ data/index.php [L]
+#RewriteRule ^sql/pokemon/([0-9]+).png$ sql/pokemon/$1.PNG [L]
+
+
+
+
+RewriteCond %{HTTP_HOST} ^sc1.lol$ [OR]
+RewriteCond %{HTTP_HOST} ^www.sc1.lol$
+RewriteRule ^(.*)$ _blog/$1

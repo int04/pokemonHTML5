@@ -1,0 +1,264 @@
+type : 
+Normal
+Fire
+Water
+Electric
+Grass
+Ice
+Fighting
+Poison
+Ground
+Flying
+Psychic
+Bug
+Rock
+Ghost
+Dragon
+Dark
+Steel
+Fairy
+
+
+
+lấy img tại : /sql/pokemon
+lấy img npc tại : sql/load/images/charactersets/.
+
+song add quái rồi nhé. thời gian hồi sinh mà lớn hơn 30.000 là sẽ có thông báo trên kênh thế giới nhé ( 30k = 30s).
+
+
+Tạo npc ( tạo NPC giao tiếp nhé)
+Di chuyển ngẫu nhiên => npc sẽ có quyền di chuyển
+đứng yên là sẽ đứng yên.
+
+Tiếp theo click vào UPDATE MAP
+
+để xem kết quả thì bạn đăng nhập lại hoặc chuyển map khác rồi quay lại map cũ là đc
+ẹc mình quên chưa nhập X-Y
+
+Tạo menu cho NPC click BUTTON NPC cái dấu # thì đặt bất kì
+
+các menu :
+
+game_vongquay() => vòng quay
+bxh() => bxh
+game_benhvien() => bệnh viện
+game_shop(5) => shop kĩ năng
+game_shop(4) => shop kĩ năng
+game_shop(1) => shop Thức ăn
+game_shop(2) => shop trang bị
+game_shop(3) => Shop linh tinh
+game_shopthoitrang() => shop thời trang
+game_ruong() => rương đồ
+
+=> sau đó lại ấn nút UPDATE MAP
+=> muốn xóa thì rồi UPDATE MAP là song.
+có vậy là hết rồi
+
+
+/////////////////////////
+ĐĂNGN HẬP vào heroku => tạo âp mới.
+vào app đó chọn DELOY => Deployment method chọn GITHUB sau đó nhập tên thư mục có chứa các file của server mà bạn vưa tạo trên github . mình đặt là "testgame" nên sẽ nhập là "testgame". click search sau khi nó ra kết quả ấn nút "connect" đợi một tí rồi nó tự cài đặt.
+sau khi nó hiện như mình thì click nút "View" rồi coppy url ví dụ "https://ducnghia.herokuapp.com/" rồi dán vào chỗ kết nối nodejs là song.
+
+
+
+
+
+
+
+
+
+
+ Chào các bạn,
+ Để hiểu rõ hơn về thế giới pokemon MMO thì chúng ta sẽ tìm hiểu một số thông số sau của pokemon nhé.
+ [b]1, Lưu ý[/b]
+- Thuộc tính áp dụng cả 2 hệ.
+- Nếu pokemon bạn có 2 hệ thì sẽ tác dụng luôn cả 2 hệ nhé.
+
+[b] 2, Chỉ số hệ pokemon [/b]
+
+- Normal :
++ HP : 0.3%
++ Giáp : 0.1%
++ Tốc độ : 0.1%
++ Vật lí : 1.0%
++ Phép : 0%
++ Mp : 0.1%
++ Chí mạng : 0%
++ Xuyên giáp : 0%.
+
+- Fire:
++ HP : 2.3%
++ Giáp : 0.1%
++ Tốc độ : 0.1%
++ Vật lí : 1.5%
++ Phép : 0%
++ Mp : 0.1%
++ Chí mạng : 0.2%
++ Xuyên giáp : 0%.
+
+- Water:
++ HP : 0.1%
++ Giáp : 0.1%
++ Tốc độ : 1.1%
++ Vật lí : 0.1%
++ Phép : 0.1%
++ Mp : 1.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+- Electric:
++ HP : 0.1%
++ Giáp : 0.1%
++ Tốc độ : 1.1%
++ Vật lí : 0.1%
++ Phép : 1.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+- Grass:
++ HP : 1.1%
++ Giáp : 1.1%
++ Tốc độ : 0.1%
++ Vật lí : 0.1%
++ Phép : 0.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+- Ice:
++ HP : 0.1%
++ Giáp : 1.1%
++ Tốc độ : 0.1%
++ Vật lí : 0.1%
++ Phép : 1.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.3%.
+
+
+- Fighting:
++ HP : 1.1%
++ Giáp : 2.1%
++ Tốc độ : 0.1%
++ Vật lí : 0.1%
++ Phép : 0.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+
+- Poison:
++ HP : 1.1%
++ Giáp : 0.1%
++ Tốc độ : 0.1%
++ Vật lí : 0.1%
++ Phép : 2.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.3%.
+
+
+- Gound:
++ HP : 0.1%
++ Giáp : 1.1%
++ Tốc độ : 0.1%
++ Vật lí : 2.1%
++ Phép : 0.1%
++ Mp : 0.1%
++ Chí mạng : 0.2%
++ Xuyên giáp : 0.1%.
+
+
+- Flying:
++ HP : 0.1%
++ Giáp : 3.1%
++ Tốc độ : 3.1%
++ Vật lí : 0.1%
++ Phép : 0.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+- Psychic:
++ HP : 2.1%
++ Giáp : 0.1%
++ Tốc độ : 0.1%
++ Vật lí : 0.1%
++ Phép : 0.1%
++ Mp : 3.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+- Bug:
++ HP : 0.1%
++ Giáp : 2.1%
++ Tốc độ : 2.1%
++ Vật lí : 0.1%
++ Phép : 0.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+
+- Rock:
++ HP : 2.1%
++ Giáp : 2.1%
++ Tốc độ : 0.1%
++ Vật lí : 3.1%
++ Phép : 0.1%
++ Mp : 0.1%
++ Chí mạng : 0.2%
++ Xuyên giáp : 0.1%.
+
+- Ghost:
++ HP : 2.1%
++ Giáp : 0.1%
++ Tốc độ : 3.1%
++ Vật lí : 0.1%
++ Phép : 2.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.
+
+- Dragon:
++ HP : 2.1%
++ Giáp : 0.1%
++ Tốc độ : 3.1%
++ Vật lí : 0.1%
++ Phép : 2.1%
++ Mp : 1.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.3%.
+
+- Dark:
++ HP : 0.1%
++ Giáp : 0.1%
++ Tốc độ : 3.1%
++ Vật lí : 0.1%
++ Phép : 2.1%
++ Mp : 0.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.2%.
+
+
+- Steel:
++ HP : 3.1%
++ Giáp : 3.1%
++ Tốc độ : 0.1%
++ Vật lí : 1.1%
++ Phép : 0.1%
++ Mp : 1.1%
++ Chí mạng : 0.2%
++ Xuyên giáp : 0.1%.
+
+- Fairy:
++ HP : 4.1%
++ Giáp : 0.1%
++ Tốc độ : 3.1%
++ Vật lí : 0.1%
++ Phép : 0.1%
++ Mp : 3.1%
++ Chí mạng : 0.1%
++ Xuyên giáp : 0.1%.

@@ -1,0 +1,1409 @@
+@font-face { 
+font-family: Comfortaa; 
+src: url(/style/font/Comfortaa.ttf);  
+}
+.menu{
+    border: 1px solid #eab191;
+    margin: 0px 0 0 0;
+    padding: 0 0 0 0;
+    
+}
+.list{
+    background:none repeat scroll 0 0 #b1906a;font-size:14px;line-height:24px;padding:5px 7px
+}
+
+  @keyframes ghost { 
+100% { background-position: 384px;opacity: 0;}
+}
+.ghost {
+background: url(/sql/load/img/data/Atk-Ghost.png);
+width: 64px;
+height: 64px;
+
+animation: ghost 0.78s steps(6) 1 forwards;
+-moz-animation: ghost 0.78s steps(6) 1 forwards ;
+-webkit-animation: ghost 0.78s steps(6) 1 forwards ;
+-o-animation: ghost 0.78s steps(6) 1 forwards ;
+   
+ 
+}
+   @keyframes ice { 
+100% { background-position: 650px;opacity: 0;}
+}
+.ice {
+background: url(/sql/load/img/data/ice.png);
+width: 108.333333px;
+height: 74px;
+
+animation: ice 0.78s steps(6) 1 forwards;
+-moz-animation: ice 0.78s steps(6) 1 forwards ;
+-webkit-animation: ice 0.78s steps(6) 1 forwards ;
+-o-animation: ice 0.78s steps(6) 1 forwards ;
+}
+  @keyframes grass { 
+100% { background-position: 1090px;opacity: 0;}
+}
+.grass {
+background: url(/sql/load/img/data/grass.png);
+width: 109px;
+height: 81px;
+
+animation: grass 0.78s steps(10) 1 forwards;
+-moz-animation: grass 0.78s steps(10) 1 forwards ;
+-webkit-animation: grass 0.78s steps(10) 1 forwards ;
+-o-animation: grass 0.78s steps(10) 1 forwards ;
+}
+  @keyframes psychic { 
+100% { background-position: 512px;opacity: 0;}
+}
+.psychic {
+background: url(/sql/load/img/data/Atk-Psychic.png);
+width: 64px;
+height: 64px;
+
+animation: psychic 0.78s steps(8) 1 forwards;
+-moz-animation: psychic 0.78s steps(8) 1 forwards ;
+-webkit-animation: psychic 0.78s steps(8) 1 forwards ;
+-o-animation: psychic 0.78s steps(8) 1 forwards ;
+   
+ 
+}
+  @keyframes dragon { 
+100% { background-position: 384px;opacity: 0;}
+}
+.dragon {
+background: url(/sql/load/img/data/Atk-Dragon.png);
+width: 64px;
+height: 64px;
+
+animation: dragon 0.78s steps(6) 1 forwards;
+-moz-animation: dragon 0.78s steps(6) 1 forwards ;
+-webkit-animation: dragon 0.78s steps(6) 1 forwards ;
+-o-animation: dragon 0.78s steps(6) 1 forwards ;
+   
+ 
+}
+  .chet {position:absolute;animation:chet 0.4s;-webkit-animation:chet 0.4s;-webkit-animation-delay:0s;-webkit-animation-iteration-count:1;animation-iteration-count: 1;}
+@keyframes chet {
+    10% {opacity:0.8;left:130px;top:120px;}
+100% {opacity: 0;left:130px;top:200px;}
+    
+    
+}
+
+
+
+
+ @keyframes pokeball { 
+100% { background-position: 680px;}
+}
+.pokeball {
+background: url(/sql/load/img/ball/pokeball.png);
+width: 40px;
+height: 40px;
+
+animation: pokeball 0.78s steps(17) 1 forwards;
+-moz-animation: pokeball 0.78s steps(17) 1 forwards ;
+-webkit-animation: pokeball 0.78s steps(17) 1 forwards ;
+-o-animation: pokeball 0.78s steps(17) 1 forwards ;
+   
+ 
+}
+
+  #control-main {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 3px #aaaaaa;
+}
+#control-main * {
+    margin: 0 0 0 0;
+}
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.btn-kinang {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.col-xs-12 {
+    width: 100%;
+}
+.col-xs-4 {
+    width: 33.33333333%;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.text-center {
+    text-align: center;
+}
+.btn-sm, .btn-group-sm>.btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.attack_messe2 {
+    position: absolute;
+    right: 0px;
+    height: 150px;
+    width: 200px;
+    text-align: left;
+    overflow: scroll;
+    z-index: 999;
+}
+
+.attack_messe {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    height: 78px;
+    width: 200px;
+    text-align: left;
+    overflow: scroll;
+    z-index: 999;
+background: url(/sql/load/img/can/msg.png) center top / 100% 100% no-repeat;    
+}
+
+@keyframes hieuung { 
+100% { background-position: 5376px;opacity: 0;}
+}
+.cofe {
+background: url(/sql/load/img/ducnghia/phaohoa.png);
+width: 256px;
+height: 235px;
+
+animation: hieuung 0.78s steps(21) 1 forwards;
+-moz-animation: hieuung 0.78s steps(21) 1 forwards ;
+-webkit-animation: hieuung 0.78s steps(21) 1 forwards ;
+-o-animation: hieuung 0.78s steps(21) 1 forwards ;
+   
+ 
+}
+
+
+    @keyframes fighting { 
+100% { background-position: 1360px;opacity: 0;}
+}
+.fighting {
+background: url(/sql/load/img/data/fighting.png);
+width: 80px;
+height: 80px;
+
+animation: fighting 0.78s steps(17) 1 forwards;
+-moz-animation: fighting 0.78s steps(17) 1 forwards ;
+-webkit-animation: fighting 0.78s steps(17) 1 forwards ;
+-o-animation: fighting 0.78s steps(17) 1 forwards ;
+   
+ 
+}
+     @keyframes steel { 
+100% { background-position: 640px;opacity: 0;}
+}
+.steel {
+background: url(/sql/load/img/data/steel.png);
+width: 80px;
+height: 80px;
+
+animation: steel 0.78s steps(8) 1 forwards;
+-moz-animation: steel 0.78s steps(8) 1 forwards ;
+-webkit-animation: steel 0.78s steps(8) 1 forwards ;
+-o-animation: steel 0.78s steps(8) 1 forwards ;
+   
+ 
+}
+    @keyframes fairy { 
+100% { background-position: 800px;opacity: 0;}
+}
+.fairy {
+background: url(/sql/load/img/data/fairy.png);
+width: 80px;
+height: 80px;
+
+animation: fairy 0.78s steps(10) 1 forwards;
+-moz-animation: fairy 0.78s steps(10) 1 forwards ;
+-webkit-animation: fairy 0.78s steps(10) 1 forwards ;
+-o-animation: fairy 0.78s steps(10) 1 forwards ;
+}
+   @keyframes electric { 
+100% { background-position: 560px;opacity: 0;}
+}
+.electric {
+background: url(/sql/load/img/data/electric.png);
+width: 80px;
+height: 80px;
+
+animation: electric 0.78s steps(7) 1 forwards;
+-moz-animation: electric 0.78s steps(7) 1 forwards ;
+-webkit-animation: electric 0.78s steps(7) 1 forwards ;
+-o-animation: electric 0.78s steps(7) 1 forwards ;
+   
+ 
+}
+    @keyframes ground { 
+100% { background-position: 320px;opacity: 0;}
+}
+.ground {
+background: url(/sql/load/img/data/ground.png);
+width: 80px;
+height: 80px;
+
+animation: ground 0.78s steps(4) 1 forwards;
+-moz-animation: ground 0.78s steps(4) 1 forwards ;
+-webkit-animation: ground 0.78s steps(4) 1 forwards ;
+-o-animation: ground 0.78s steps(4) 1 forwards ;
+   
+ 
+}
+   @keyframes fire { 
+100% { background-position: 640px;opacity: 0;}
+}
+.fire {
+background: url(/sql/load/img/data/fire.png);
+width: 80px;
+height: 80px;
+
+animation: fire 0.78s steps(8) 1 forwards;
+-moz-animation: fire 0.78s steps(8) 1 forwards ;
+-webkit-animation: fire 0.78s steps(8) 1 forwards ;
+-o-animation: fire 0.78s steps(8) 1 forwards ;
+   
+ 
+}
+    @keyframes normal2 { 
+100% { background-position: 1760px;opacity: 0;}
+}
+.normal2 {
+background: url(/sql/load/img/data/normal.png);
+width: 80px;
+height: 80px;
+
+animation: normal2 0.78s steps(22) 1 forwards;
+-moz-animation: normal2 0.78s steps(22) 1 forwards ;
+-webkit-animation: normal2 0.78s steps(22) 1 forwards ;
+-o-animation: normal2 0.78s steps(22) 1 forwards ;
+   
+ 
+}
+      @keyframes dark { 
+100% { background-position: 320px;opacity: 0;}
+}
+.dark {
+background: url(/sql/load/img/data/Atk-Dark.png);
+width: 64px;
+height: 64px;
+
+animation: dark 0.78s steps(5) 1 forwards;
+-moz-animation: dark 0.78s steps(5) 1 forwards ;
+-webkit-animation: dark 0.78s steps(5) 1 forwards ;
+-o-animation: dark 0.78s steps(5) 1 forwards ;
+   
+ 
+}
+     @keyframes ghost2 { 
+100% { background-position: 1440px;opacity: 0;}
+}
+.ghost2 {
+background: url(/sql/load/img/data/ghost.png);
+width: 80px;
+height: 80px;
+
+animation: ghos2t 0.78s steps(18) 1 forwards;
+-moz-animation: ghost2 0.78s steps(18) 1 forwards ;
+-webkit-animation: ghost2 0.78s steps(18) 1 forwards ;
+-o-animation: ghost2 0.78s steps(18) 1 forwards ;
+   
+ 
+}
+   @keyframes bug { 
+100% { background-position: 720px;opacity: 0;}
+}
+.bug {
+background: url(/sql/load/img/data/bug.png);
+width: 80px;
+height: 80px;
+
+animation: bug 0.78s steps(9) 1 forwards;
+-moz-animation: bug 0.78s steps(9) 1 forwards ;
+-webkit-animation: bug 0.78s steps(9) 1 forwards ;
+-o-animation: bug 0.78s steps(9) 1 forwards ;
+   
+ 
+}
+    @keyframes rock { 
+100% { background-position: 640px;opacity: 0;}
+}
+.rock {
+background: url(/sql/load/img/data/rock.png);
+width: 80px;
+height: 80px;
+
+animation: rock 0.78s steps(8) 1 forwards;
+-moz-animation: rock 0.78s steps(8) 1 forwards ;
+-webkit-animation: rock 0.78s steps(8) 1 forwards ;
+-o-animation: rock 0.78s steps(8) 1 forwards ;
+   
+ 
+}
+   @keyframes poison { 
+100% { background-position: 560px;opacity: 0;}
+}
+.poison {
+background: url(/sql/load/img/data/poison.png);
+width: 80px;
+height: 80px;
+
+animation: poison 0.78s steps(7) 1 forwards;
+-moz-animation: poison 0.78s steps(7) 1 forwards ;
+-webkit-animation: poison 0.78s steps(7) 1 forwards ;
+-o-animation: poison 0.78s steps(7) 1 forwards ;
+   
+ 
+}
+     @keyframes water { 
+100% { background-position: 1120px;opacity: 0;}
+}
+.water {
+background: url(/sql/load/img/data/water.png);
+width: 80px;
+height: 80px;
+
+animation: water 0.78s steps(14) 1 forwards;
+-moz-animation: water 0.78s steps(14) 1 forwards ;
+-webkit-animation: water 0.78s steps(14) 1 forwards ;
+-o-animation: water 0.78s steps(14) 1 forwards ;
+   
+ 
+}
+       @keyframes flying { 
+100% { background-position: 800px;opacity: 0;}
+}
+.flying {
+background: url(/sql/load/img/data/flying.png);
+width: 80px;
+height: 80px;
+
+animation: flying 0.78s steps(10) 1 forwards;
+-moz-animation: flying 0.78s steps(10) 1 forwards ;
+-webkit-animation: flying 0.78s steps(10) 1 forwards ;
+-o-animation: flying 0.78s steps(10) 1 forwards ;
+   
+ 
+}
+
+.tab-content #playerList {
+    height: 135px;
+    overflow: scroll;
+}
+
+.tab-content #chatConsole {
+    height: 135px;
+    overflow: scroll;
+}
+
+.tab-content #fixloi {
+    height: 135px;
+    overflow: scroll;
+}
+
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+
+.tab-content>.active {
+    display: block;
+}
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.nutchat0 {
+    
+       text-shadow: 2px 0 0 #068232, -2px 0 0 #068232, 0 2px 0 #068232, 0 -2px 0 #068232, 1px 1px #068232, -1px -1px 0 #068232, 1px -1px 0 #068232, -1px 1px 0 #068232;
+
+    font-weight: bold;
+
+font-size:12px;
+           padding-top: 15px;
+background: url(/sql/load/img/canvas/chat.png) 0 0/cover no-repeat;
+ width: 70px;
+    height: 70px; display: inline-table; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+}
+
+.nutchat {
+    
+       text-shadow: 2px 0 0 #068232, -2px 0 0 #068232, 0 2px 0 #068232, 0 -2px 0 #068232, 1px 1px #068232, -1px -1px 0 #068232, 1px -1px 0 #068232, -1px 1px 0 #068232;
+
+    font-weight: bold;
+
+font-size:12px;
+           padding-top: 15px;
+background: url(/sql/load/img/canvas/cs4_0.png) 0 0/cover no-repeat;
+ width: 70px;
+    height: 70px; display: inline-table; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+}
+
+.btlogin2 {
+   
+font-size:15px;
+           padding-top: 15px;
+background: url(/sql/load/img/canvas/button_cx.png) 0 0/cover no-repeat;
+ width: 140px;
+    height: 50px; display: inline-block; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+}
+
+.btlogin {
+   
+font-size:15px;
+           padding-top: 15px;
+background: url(/sql/load/img/canvas/button_nut1.png) 0 0/cover no-repeat;
+ width: 140px;
+    height: 50px; display: inline-block; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+}
+
+.nutplayv {
+   
+font-size:15px;
+           padding-top: 7px;
+background: url(/sql/load/img/canvas/u_ListButton01.png) 0 0/cover no-repeat;
+ width: 157px;
+    height: 50px; display: inline-block; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+}
+ .canvas_menu {
+   
+font-size: 9px;
+    padding-top: 10px;
+    background: url(/sql/load/menu_2020.png) 0 0/cover no-repeat;
+    width: 60px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+}
+.nutplay {
+   
+font-size:15px;
+           padding-top: 15px;
+background: url(/sql/load/img/canvas/khung_bottun.png) 0 0/cover no-repeat;
+ width: 157px;
+    height: 50px; display: inline-block; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+}
+
+.info {
+   
+font-size:15px;
+padding-top: 7px;
+background: url(/sql/load/img/canvas/dcf504db.png) 0 0/cover no-repeat;
+ width: 200px;
+    height: 220px; display: inline-block; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+}
+
+
+.input3 {
+     border: 0px solid #ffffff;
+
+font-size:15px;
+           padding-top: 7px;
+background: url(/sql/load/img/canvas/input.png) 0 0/cover no-repeat;
+ width: 236px;
+    height: 50px; display: inline-block; text-align:center; position:relative; z-index: 1;
+ background-repeat: no-repeat;
+ background-position: center top;
+    background-size: 100% 100%;
+    
+ color:red;
+    outline: 0!important;       
+}
+
+	#canvasmain {
+            
+			left: calc(50% - 320px);
+			top: 0px;
+			position: absolute;
+			border: 1px solid blue;
+			width: 640px;
+			height: 640px;
+		}
+		#IGUI {
+			left: calc(50% - 320px);
+			top: 0px;
+			position: absolute;
+			border: 1px solid blue;
+			width: 640px;
+			height: 640px;
+		}
+		#IGUI * {
+			z-index: 99;
+		}
+		#IGUI #pokemonToolBar {
+			position: absolute;
+			padding: 10px;
+			width: 50px;
+			min-height: 220px;
+			top: 100px;
+			background: white;
+			filter: alpha(opacity=75);
+			-moz-opacity: 0.7;
+			opacity: 0.7;
+			border: 1px solid black;
+		}
+		#IGUI #pokemonToolBar .pokeIcon:hover img {
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+		#pokedexToolbar {
+			position: absolute;
+			width: 200px;
+			right: 0px;
+		}
+		#pokeDexContainer {
+			width: 200px;
+			height: 300px;
+			display: none;
+			filter: alpha(opacity=70);
+			-moz-opacity: 0.7;
+			opacity: 0.7;
+			overflow: scroll;
+		}
+		#PokePopover {
+            position:absolute;
+            left:50px;
+			width: 200px;
+			height: 200px;
+			//filter: alpha(opacity=80);
+			-moz-opacity: 0.8;
+			opacity: 0.8;
+			background: white;
+		}
+		#gameChatBar {
+			position: absolute;
+			height: 200px;
+			width: 240px;
+			filter: alpha(opacity=50);
+			-moz-opacity: 0.5;
+			opacity: 0.5;
+		}
+	
+		#debug {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 200px;
+			border: 1px solid black;
+			z-index: 99;
+		}
+		#msg-box {
+			position: absolute;
+			width: 500px;
+			height: 80px;
+			top: 300px;
+			left: 20%;
+			border: 10px solid black;
+			background: white;
+		}
+		#msg-box-choose {
+			background: white;
+			position: absolute;
+			margin: auto;
+			top: 350px;
+			left: 20%;
+			min-height: 20px;
+			width: 360px;
+			border: black 10px solid;
+			size: 10px;
+		}
+		#msg-box-choose .choose {
+			display: block;
+			font-size: 20px;
+			text-decoration: none;
+		}
+		#battleSystemDiv {
+			//text-align: center;
+			margin: auto;
+		}
+		#allPlayer {
+			padding: 5px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			background: white;
+			filter: alpha(opacity=80);
+			-moz-opacity: 0.8;
+			opacity: 0.8;
+		}
+		.timebar-border {
+			border-bottom: solid green 2px;
+			position: relative;
+			top: 50px;
+			left: -88px;
+			width: 300px;
+			z-index: 99;
+		}
+		.timebar-content {
+			position: absolute;
+			top: 0px;
+			padding: 10px 0px 10px 0px;
+			background: #EBB658;
+		}
+		.timebar-icon {
+			position: absolute;
+			//	border-left: black solid 2px;
+
+		}
+		.timebar-icon img {} .ally {
+			top: -31px;
+		}
+		.enemy {
+			top: 0px;
+		}
+		#canvasB {
+			position: absolute;
+			left: 0px;
+		}
+		#battle-wrapper {
+			width: 100%;
+			height: 400px;
+			position: absolute;
+			top: 20px;
+			//	border: solid 1px green;
+
+		}
+		#battle-scene {
+			position: relative;
+			width: 500px;
+			height: 400px;
+			//		background: url(battlebackground/normal.png);
+			background-size: cover;
+			//	 border: solid 1px black;
+
+		}
+		img {
+			// border:1px solid black;
+
+		}
+		.allyPic {
+			position: absolute;
+			left: 5%;
+			;
+			bottom: 5%;
+			width: 20%;
+		}
+		.enemyPic {
+			position: absolute;
+			left: 60%;
+			bottom: 42%;
+		}
+		.Pokemon_container * {
+			//	 border:solid 1px black;
+
+		}
+		.Pokemon_container {
+			width: 180px;
+			//    border:solid 1px black;
+
+		}
+		.Pokemon_container .progress {
+			height: 10px;
+		}
+		.picContainer {
+			position: relative;
+			//text-align: center;
+			height: 100px;
+		}
+		.picContainer img {
+			position: absolute;
+			bottom: 0px;
+			//text-align: center;
+			left: 30%;
+		}
+		.allyPic .picContainer img {} #control-wapper {
+			width: 100%;
+			height: 164px;
+			position: absolute;
+			margin: auto;
+			top: 420px;
+		border: solid 1px red;
+
+		}
+	
+		.iconshp {
+			height: 5px;
+			width: 32px;
+		}
+		.iconshp div {
+			background: green;
+		}
+		#control_right > div {
+			height: 58px;
+		}
+		#battleReport {
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			height: 150px;
+			width: 200px;
+			//	border: 1px solid black;
+			text-align: left;
+			overflow: scroll;
+			z-index: 999;
+		}
+		
+.bigpic {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+	bottom:0px;
+  z-index: 10;
+  
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+	max-width:150px;
+}
+
+.chart {
+  position: relative;
+  float: left;
+  z-index: 4;
+  width: 66.5306122448%;
+  height: 189px;
+  margin-left: 0.19452%;
+  background-color: #777;
+overflow-y: auto;  
+}
+#pokemonChart{
+
+	top:20px;
+}
+.close {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 43;
+  width: 9.387755102%;
+  height: 25px;
+  margin: -189px 0 0 90.61224%;
+  background-color: rgb(207, 57, 82);
+}
+
+.pokedetailcontainer .element {
+  float: left;
+}
+
+.pokedetailcontainer .exp {
+  float: left;
+  clear: both;
+  width: 94.8012232415%;
+  height: 5px;
+  margin: 13px 0 0 1.84442%;
+  border-radius: 10px;
+  background-color: rgb(141, 154, 244);
+}
+
+.pokedetailcontainer .hp {
+  float: left;
+  width: 62.6911314984%;
+  height: 7px;
+  margin: 13px 0 0 33.9592889908%;
+  background-color: rgb(113, 213, 115);
+}
+
+.pokedetailcontainer .image {
+  display: block;
+  float: left;
+  width: 32px;
+  height: auto;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.pokedetailcontainer .intername {
+  position: absolute;
+  top: -1px;
+  left: 42.944785276%;
+  z-index: 1;
+  width: 55.2147239263%;
+  min-height: 21px;
+  padding-left: 3px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 173, 0);
+}
+
+.pokedetailcontainer .introbackground {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100.0095868085%;
+  height: 132px;
+  margin: 10px 0 0 -0.00959%;
+  background-color: rgb(90, 91, 93);
+}
+
+.pokedetailcontainer .item {
+  float: left;
+  width: 73.7417313776%;
+  height: 30px;
+  margin: 16px 0 0 13.8625251653%;
+  border-radius: 25px;
+  background-color: rgba(255, 254, 254, 0.97);
+}
+
+.pokedetailcontainer .itemhold {
+  position: relative;
+  float: left;
+  z-index: 1;
+  width: 33.2653061224%;
+  height: 63px;
+  margin: 19px 0 0 0.0031887755%;
+  background-color: rgb(90, 91, 93);
+}
+
+.pokedetailcontainer .left {
+  float: left;
+  width: 22.0183486238%;
+  height: 38px;
+  margin-left: 7.7694954128%;
+  background-color: rgb(255, 173, 0);
+}
+
+.pokedetailcontainer .lv {
+  position: absolute;
+  top: 21px;
+  left: 42.944785276%;
+  z-index: 1;
+  width: 55.2147239263%;
+  min-height: 21px;
+  padding-left: 3px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 173, 0);
+}
+
+.pokedetailcontainer .maininfo {
+  position: relative;
+  float: left;
+  z-index: 3;
+  width: 33.2653061224%;
+  height: 183px;
+  background-color: rgb(47, 49, 48);
+}
+
+.pokedetailcontainer .mainpic {
+  position: relative;
+  float: left;
+  z-index: 3;
+  width: 33.300382653%;
+  height: 183px;
+  margin-top: -5px;
+}
+
+.pokedetailcontainer .mainpoke {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 3;
+  width: 66.7346938775%;
+  height: 150px;
+  margin: -179px 0 0 33.25893%;
+  background-color: rgb(90, 91, 93);
+}
+
+.pokedetailcontainer .mainpoke .element {
+  position: relative;
+  clear: both;
+  z-index: 3;
+  width: 24.4648318042%;
+  height: 75px;
+  margin: 21px 0 0 4.6970599999%;
+  background-color: rgb(90, 91, 93);
+}
+
+.pokedetailcontainer .mid {
+  float: left;
+  width: 22.0183486238%;
+  height: 38px;
+  margin-left: 7.989296636%;
+  background-color: rgb(113, 213, 115);
+}
+
+.pokedetailcontainer .name {
+  float: left;
+  width: 52.7607361963%;
+  min-height: 21px;
+  margin: 5px 0 0 23.3320599999%;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.pokedetailcontainer .namepanel {
+  float: left;
+  width: 100.0095868085%;
+  height: 31px;
+  margin: 11px 0 0 -0.00959%;
+  background-color: rgb(19, 161, 208);
+}
+
+.pokedetailcontainer .nature {
+  position: absolute;
+  top: 87px;
+  left: 42.944785276%;
+  z-index: 3;
+  width: 55.2147239263%;
+  min-height: 21px;
+  padding-left: 3px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 173, 0);
+}
+
+.pokedetailcontainer .ot {
+  position: absolute;
+  top: 109px;
+  left: 42.944785276%;
+  z-index: 3;
+  width: 55.2147239263%;
+  min-height: 21px;
+  padding-left: 3px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 173, 0);
+}
+
+
+
+.pokemonscontrol {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 3;
+  width: 66.7346938775%;
+  height: 38px;
+  margin: -38px 0 0 33.26531%;
+  background-color: rgb(75, 71, 85);
+}
+
+.pokemonslist {
+  position: relative;
+  float: left;
+  z-index: 3;
+  width: 66.7346938775%;
+  height: 68px;
+  margin-top: -25px;
+  background-color: rgb(47, 49, 48);
+}
+
+.pokemonslist .element {
+  margin-top: 18px;
+  border: 1px solid rgb(75, 71, 85);
+  background-color: rgb(47, 49, 48);
+}
+.pokemonslist .element:hover{
+	border: 2px solid black;
+	
+}
+
+.pokedetailcontainer .switch{
+	border: 2px solid rgb(121, 200, 231) !important;
+}
+
+.pokedetailcontainer .right {
+  float: left;
+  width: 22.0183486238%;
+  height: 38px;
+  margin-left: 8.5770259938%;
+  background-color: rgb(255, 137, 91);
+}
+
+.pokedetailcontainer .sex {
+  position: absolute;
+  top: 43px;
+  left: 42.944785276%;
+  z-index: 2;
+  width: 55.2147239263%;
+  min-height: 21px;
+  padding-left: 3px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 173, 0);
+}
+
+.pokedetailcontainer .shiny {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 63.1331992722%;
+  z-index: 1;
+  width: 60px;
+  height: auto;
+  overflow: hidden;
+}
+
+.pokedetailcontainer .skill {
+  position: relative;
+  float: left;
+  width: 28.1345565749%;
+  height: 38px;
+  background-color: rgb(121, 200, 231);
+}
+
+.pokedetailcontainer .text {
+  position: absolute;
+  left: 0.0095858895%;
+  //width: 41.1042944785%;
+  min-height: 21px;
+  padding-left: 3px;
+  font-size: 1em;
+  font-weight: 400;
+
+  color: rgb(255, 173, 0);
+}
+
+.pokedetailcontainer .type {
+  position: absolute;
+  top: 65px;
+  left: 42.944785276%;
+  z-index: 2;
+  width: 57.0552147239%;
+  height: 22px;
+  background-color: rgb(90, 91, 93);
+	
+}
+
+.pokedetailcontainer .type img{	
+	margin: 5px;
+}
+
+.pokedetailcontainer .element-2 {
+  width: 10.7033639143%;
+  height: 34px;
+  margin-left: 8.06575%;
+}
+
+.pokedetailcontainer .element-3 {
+  width: 10.7033639143%;
+  height: 34px;
+  margin-left: 2.94343%;
+}
+
+.pokedetailcontainer .element-4 {
+  width: 10.7033639143%;
+  height: 34px;
+  margin-left: 3.54549%;
+}
+
+.pokedetailcontainer .element-5 {
+  width: 10.3975535168%;
+  height: 34px;
+  margin-left: 5.4807%;
+}
+
+.pokedetailcontainer .element-6 {
+  width: 10.7033639143%;
+  height: 33px;
+  margin-left: 3.1919%;
+}
+
+.pokedetailcontainer .element-7 {
+  width: 10.7033639143%;
+  height: 33px;
+  margin-left: 3.4117%;
+}
+
+.image-1 {
+  margin-left: 12.6680107526%;
+}
+
+.image-2 {
+  margin-left: 9.4254032258%;
+}
+
+.skill-1 {
+  z-index: 1;
+  margin: 16px 0 0 4.6636085626%;
+}
+
+.skill-2 {
+  z-index: 1;
+  margin: 16px 0 0 6.7326070336%;
+}
+
+.skill-3 {
+  clear: both;
+  z-index: 1;
+  margin: -26px 0 0 33.6248088685%;
+}
+
+.skill-4 {
+  z-index: 1;
+  margin: -26px 0 0 7.2104357798%;
+}
+
+.text-1 {
+ 	
+  top: 0;
+  z-index: 1;
+}
+
+.text-2 {
+ 	top: 21px;
+  z-index: 1;
+}
+
+.text-3 {
+  top: 43px;
+  z-index: 1;
+}
+
+.text-4 {
+	 top: 65px;
+  z-index: 1;
+
+}
+
+.text-5 {
+	 top: 87px;
+  z-index: 1;
+	
+  
+}
+
+.text-6 {
+	 top: 109px;
+  z-index: 1;
+	
+}
+		
+		
+		 .trangbi {
+		     display: inline-table;
+		     text-align: center;
+		     position: relative;
+		     width: 10%;
+		     height: 34px;
+		     border: 1px solid rgb(75, 71, 85);
+		     background-color: rgb(138, 152, 145);
+		 }
+		
+		/* Grid - Fluid 960 grid
+-------------------------------------------------------------- */
+.container{
+	width:92%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_full{
+	float:left;
+	position:relative;
+	margin-left:1%;
+	margin-right:1%
+}
+
+.grid_1		{ width:10.5%; }
+.grid_2		{ width:23%; }
+.grid_3		{ width:35.5%; }
+.grid_4		{ width:48%; }
+.grid_5		{ width:60.5%; }
+.grid_6		{ width:73%; }
+.grid_7		{ width: 85.5%;; }
+.grid_8,
+.grid_full	{ width:98.0%; }
+.grid_right	{ float:right }
+
+/* Use as necessary for nested content. Also use percents here for fluidity. */
+.content-pad-right { margin-right: 4%; }
+.content-pad-left: { margin-left: 4%; }
+
+audio,
+img,
+video {
+	max-width: 100%;
+}
+
+/* @media Queries -------------------------------------------- */
+
+/* @iPhone < 480px - One column fluid.
+-------------------------------------------------------------- */
+@media screen and (max-width:480px) {
+	
+}
+
+/* @1-Col < 768px - One column fluid.
+-------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+	html{
+		-webkit-text-size-adjust:none;
+		-ms-text-size-adjust:none
+	}
+	
+	body{
+		font-size: 82.5%;
+	}
+	
+	.container{
+		width:92%;
+		margin:0 auto
+	}
+	
+	.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_full{
+		float: none;
+		width:100%;
+		margin:0 0 2.5em;
+	}
+
+	.content-pad-left,
+	.content-pad-right {
+		margin-left:0;
+		margin-right:0;
+	}
+
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
